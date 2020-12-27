@@ -1,0 +1,8 @@
+${project.name}
+
+  Maven plug-in to run {{{https://www.packer.io/}Packer}} commands.
+
+* Goals overview
+
+  * {{{./build-mojo.html}packer:build}} execute Packer {{{https://www.packer.io/docs/commands/build}
+    build}} command.

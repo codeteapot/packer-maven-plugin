@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component-set>
+    <components>
+    
+        <component>
+            <role>com.github.codeteapot.maven.plugins.packer.tools.PackerFactory</role>
+            <implementation>com.github.codeteapot.maven.plugins.packer.tools.DefaultPackerFactory</implementation>
+        </component>
+        
+        <component>
+            <role>com.github.codeteapot.maven.plugins.packer.tools.ChecksumFactory</role>
+            <implementation>com.github.codeteapot.maven.plugins.packer.tools.DefaultChecksumFactory</implementation>
+        </component>
+        
+    </components>
+</component-set>

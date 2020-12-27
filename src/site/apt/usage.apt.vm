@@ -1,0 +1,30 @@
+Usage
+
+  It is like executing a Packer command through command line, with machine readable output, using
+  plug-in configuration to pass parameters.
+  
+  It only works with a previously installed Packer program, that can be download
+  {{{https://www.packer.io/downloads}here}} or both with the appropriated package manager.
+  
+  Plug-in could be used as follows.
+  
++--
+<plugin>
+    <groupId>${project.groupId}</groupId>
+    <artifactId>${project.artifactId}</artifactId>
+    <version>${project.version}</version>
+    <executions>
+        <execution>
+            <id>packer-build</id>
+            <goals>
+                <goal>build</goal>
+            </goals>
+            <phase>package</phase>
+        </execution>
+    </execution>
+</plugin>
++--
+
+  The best way of knowing how to use it is viewing some example.
+  
+   * {{{./examples/containerized-rest-endpoint.html}Containerized REST endpoint}}
