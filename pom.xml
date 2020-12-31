@@ -8,7 +8,7 @@
     
     <groupId>com.github.codeteapot.maven.plugins</groupId>
     <artifactId>packer-maven-plugin</artifactId>
-    <version>0.6.9</version>
+    <version>0.6.10</version>
     <packaging>maven-plugin</packaging>
     
     <name>Packer Maven Plugin</name>
@@ -82,8 +82,15 @@
         
         <dependency>
             <groupId>com.github.codeteapot.maven.plugin-testing</groupId>
-            <artifactId>maven-plugin-testing-harness-junit5</artifactId>
-            <version>0.1.0</version>
+            <artifactId>maven-plugin-testing-harness-junit-jupiter</artifactId>
+            <version>0.1.1</version>
+            <scope>test</scope>
+        </dependency>
+        
+        <dependency>
+            <groupId>com.github.codeteapot.maven.plugin-testing</groupId>
+            <artifactId>maven-plugin-testing-harness-plexus</artifactId>
+            <version>0.1.1</version>
             <scope>test</scope>
         </dependency>
         

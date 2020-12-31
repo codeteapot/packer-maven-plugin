@@ -9,7 +9,7 @@ Maven plug-in to run [Packer](https://www.packer.io/) commands.
 <plugin>
     <groupId>com.github.codeteapot.maven.plugins</groupId>
     <artifactId>packer-maven-plugin</artifactId>
-    <version>0.6.9</version>
+    <version>0.6.10</version>
     <executions>
         <execution>
             <id>packer-build</id>
@@ -26,5 +26,5 @@ Maven plug-in to run [Packer](https://www.packer.io/) commands.
 </plugin>
 ```
 
-Visit [project site](https://codeteapot.github.io/packer-maven-plugin/v0.6.9) to see full
+Visit [project site](https://codeteapot.github.io/packer-maven-plugin/v0.6.10) to see full
 documentation.

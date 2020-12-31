@@ -3,9 +3,12 @@ package com.github.codeteapot.maven.plugins.packer;
 import static com.github.codeteapot.maven.plugin.testing.MavenPluginContext.configuration;
 import static com.github.codeteapot.maven.plugin.testing.MavenPluginContext.configurationNode;
 import static com.github.codeteapot.maven.plugin.testing.MavenPluginContext.configurationValue;
-import static com.github.codeteapot.maven.plugin.testing.MavenPluginLoggerMessageLevel.LOG_DEBUG;
-import static com.github.codeteapot.maven.plugin.testing.MavenPluginLoggerMessageLevel.LOG_ERROR;
-import static com.github.codeteapot.maven.plugin.testing.MavenPluginLoggerMessageLevel.LOG_INFO;
+import static com.github.codeteapot.maven.plugin.testing.logger.MavenPluginLoggerMessageLevel//
+    .LOG_DEBUG;
+import static com.github.codeteapot.maven.plugin.testing.logger.MavenPluginLoggerMessageLevel//
+    .LOG_ERROR;
+import static com.github.codeteapot.maven.plugin.testing.logger.MavenPluginLoggerMessageLevel//
+    .LOG_INFO;
 import static com.github.codeteapot.tools.packer.PackerMessage.DATA_UI_ERROR;
 import static com.github.codeteapot.tools.packer.PackerMessage.DATA_UI_MESSAGE;
 import static com.github.codeteapot.tools.packer.PackerMessage.DATA_UI_SAY;
@@ -32,7 +35,7 @@ import static org.mockito.Mockito.never;
 import static org.mockito.Mockito.verify;
 import com.github.codeteapot.maven.plugin.testing.MavenPluginContext;
 import com.github.codeteapot.maven.plugin.testing.junit.jupiter.MavenPluginExtension;
-import com.github.codeteapot.maven.plugin.testing.AccumulatedMavenPluginLogger;
+import com.github.codeteapot.maven.plugin.testing.logger.AccumulatedMavenPluginLogger;
 import com.github.codeteapot.maven.plugins.packer.tools.ChecksumFactory;
 import com.github.codeteapot.maven.plugins.packer.tools.PackerFactory;
 import com.github.codeteapot.tools.checksum.Checksum;

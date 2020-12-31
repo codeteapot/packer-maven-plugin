@@ -155,7 +155,7 @@
             <plugin>
                 <groupId>com.github.codeteapot.maven.plugins</groupId>
                 <artifactId>packer-maven-plugin</artifactId>
-                <version>0.6.9</version>
+                <version>0.6.10</version>
                 <executions>
                     <execution>
                         <id>packer-build</id>
