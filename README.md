@@ -1,5 +1,5 @@
 [![Update](https://github.com/codeteapot/packer-maven-plugin/workflows/Update/badge.svg)](https://github.com/codeteapot/packer-maven-plugin/actions?query=workflow%3AUpdate)
-[![Maven Central](https://img.shields.io/maven-central/v/com.github.codeteapot.maven.plugins/packer-maven-plugin?label=Maven%20Central)](https://repo1.maven.org/maven2/com/github/codeteapot/maven/plugins/packer-maven-plugin)
+[![Maven Central](https://img.shields.io/maven-central/v/com.github.codeteapot.maven.plugins/packer-maven-plugin?label=Maven%20Central)](https://repo1.maven.org/maven2/com/github/codeteapot/maven/plugins/packer-maven-plugin/)
 
 # Packer Maven Plugin
 
