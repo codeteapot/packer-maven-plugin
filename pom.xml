@@ -83,14 +83,14 @@
         <dependency>
             <groupId>com.github.codeteapot.maven.plugin-testing</groupId>
             <artifactId>maven-plugin-testing-harness-junit-jupiter</artifactId>
-            <version>0.1.1</version>
+            <version>1.0.0</version>
             <scope>test</scope>
         </dependency>
         
         <dependency>
             <groupId>com.github.codeteapot.maven.plugin-testing</groupId>
             <artifactId>maven-plugin-testing-harness-plexus</artifactId>
-            <version>0.1.1</version>
+            <version>1.0.0</version>
             <scope>test</scope>
         </dependency>
         
