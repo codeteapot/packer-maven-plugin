@@ -1,0 +1,4 @@
+com.github.codeteapot.maven.plugins.packer
+com.github.codeteapot.maven.plugins.packer.tools
+com.github.codeteapot.tools.checksum
+com.github.codeteapot.tools.packer

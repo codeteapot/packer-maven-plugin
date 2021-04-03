@@ -1,0 +1,45 @@
+{
+  "variables": {
+    "dockerRepository": "repository",
+    "dockerTag": "tag",
+    "tomcatLibDir": "/var/lib/tomcat",
+    "applicationLibDir": "/usr/local/lib/application"
+  },
+  "builders": [
+    {
+      "type": "docker",
+      "image": "openjdk:8",
+      "commit": true,
+      "changes": [
+        "ENTRYPOINT /init"
+      ]
+    }
+  ],
+  "provisioners": [
+    {
+      "type": "shell",
+      "script": "{{template_dir}}/setup.sh",
+      "environment_vars": [
+        "TOMCAT_LIB_DIR={{ user `tomcatLibDir` }}",
+        "APPLICATION_LIB_DIR={{ user `applicationLibDir` }}"
+      ]
+    },
+    {
+      "type": "file",
+      "source": "{{template_dir}}/tomcat/",
+      "destination": "{{ user `tomcatLibDir` }}"
+    },
+    {
+      "type": "file",
+      "source": "{{template_dir}}/lib/",
+      "destination": "{{ user `applicationLibDir` }}"
+    }
+  ],
+  "post-processors": [
+    {
+      "type": "docker-tag",
+      "repository": "{{ user `dockerRepository` }}",
+      "tag": "{{ user `dockerTag` }}"
+    }
+  ]
+}
