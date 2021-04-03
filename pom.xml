@@ -8,7 +8,7 @@
     
     <groupId>com.github.codeteapot.maven.plugins</groupId>
     <artifactId>packer-maven-plugin</artifactId>
-    <version>0.6.10</version>
+    <version>1.0.0</version>
     <packaging>maven-plugin</packaging>
     
     <name>Packer Maven Plugin</name>
