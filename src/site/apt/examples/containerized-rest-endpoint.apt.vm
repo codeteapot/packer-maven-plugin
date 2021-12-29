@@ -11,7 +11,7 @@ Containerized REST endpoint
 * Project layout
 
   In order to create the Docker image through Packer, a build execution is declared to take place
-  after packaging. In this example, only <<<vars>>> configuration property is used to define two
+  when installing. In this example, only <<<vars>>> configuration property is used to define two
   variables, <dockerRepository> and <dockerTag>, which will be referenced on Packer template.
   
   <<pom.xml (packer-maven-plugin)>>

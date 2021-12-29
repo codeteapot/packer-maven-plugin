@@ -16,7 +16,7 @@ Maven plug-in to run [Packer](https://www.packer.io/) commands.
             <goals>
                 <goal>build</goal>
             </goals>
-            <phase>package</phase>
+            <phase>install</phase>
             <configuration>
                 <inputDirectory>${project.build.directory}/packer/input</inputDirectory>
                 <template>template.json</template>
