@@ -66,7 +66,7 @@
 <p>This example explains how to create a Docker container image for running an application that exposes a REST endpoint by implementing a JAX-RS resource. It runs an embedded Tomcat server and creates a context with a Jersey servlet for allocating the resource.</p>
 <p>Yes, another image type could be created, such as VirtualBox ISO or Amazon Machine Image. And another application technology could be used as well, such Spring Boot Web for writing REST controllers.</p><section>
 <h3><a name="Project_layout"></a>Project layout</h3>
-<p>In order to create the Docker image through Packer, a build execution is declared to take place after packaging. In this example, only <code>vars</code> configuration property is used to define two variables, <i>dockerRepository</i> and <i>dockerTag</i>, which will be referenced on Packer template.</p>
+<p>In order to create the Docker image through Packer, a build execution is declared to take place when installing. In this example, only <code>vars</code> configuration property is used to define two variables, <i>dockerRepository</i> and <i>dockerTag</i>, which will be referenced on Packer template.</p>
 <p><b>pom.xml (packer-maven-plugin)</b></p>
 <div class="source"><pre class="prettyprint linenums">&lt;plugin&gt;
     &lt;groupId&gt;com.github.codeteapot.maven.plugins&lt;/groupId&gt;
