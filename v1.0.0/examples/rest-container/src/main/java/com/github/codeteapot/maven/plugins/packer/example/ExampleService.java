@@ -1,4 +1,4 @@
-package com.github.codeteapot.maven.plugin.packer.example;
+package com.github.codeteapot.maven.plugins.packer.example;
 
 import static java.lang.System.getProperty;
 import org.apache.catalina.Context;
@@ -31,7 +31,7 @@ public class ExampleService {
     restServlet.setServletClass("org.glassfish.jersey.servlet.ServletContainer");
     restServlet.addInitParameter(
         "jersey.config.server.provider.packages",
-        "com.github.codeteapot.maven.plugin.packer.example.resources");
+        "com.github.codeteapot.maven.plugins.packer.example.resources");
     restServlet.setLoadOnStartup(1);
     context.addChild(restServlet);
     context.addServletMappingDecoded("/rest/*", "jax-rs-servlet");

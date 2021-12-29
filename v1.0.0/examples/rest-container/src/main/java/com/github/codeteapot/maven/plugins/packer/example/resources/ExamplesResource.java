@@ -1,4 +1,4 @@
-package com.github.codeteapot.maven.plugin.packer.example.resources;
+package com.github.codeteapot.maven.plugins.packer.example.resources;
 
 import static jakarta.ws.rs.core.MediaType.APPLICATION_JSON;
 import static jakarta.ws.rs.core.Response.status;
