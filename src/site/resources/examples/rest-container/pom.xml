@@ -167,7 +167,7 @@
                             <vars>
                                 <property>
                                     <name>dockerRepository</name>
-                                    <value>codeteapot/example-rest</value>
+                                    <value>examples/rest-endpoint</value>
                                 </property>
                                 <property>
                                     <name>dockerTag</name>

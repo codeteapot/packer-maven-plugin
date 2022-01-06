@@ -164,13 +164,13 @@ Containerized REST endpoint
 * Running container
 
   After packaging phase is completed, the Docker image is created. As indicated through variables of
-  build command, its repository is <<<codeteapot/example-rest>>> and its tag is <<<1.0.0>>>, that
+  build command, its repository is <<<examples/rest-endpoint>>> and its tag is <<<1.0.0>>>, that
   is equivalent to the artifact version.
   
   A container could be run as follows.
   
 +--
-$ docker run --rm -it -p 80:8000 codeteapot/example-rest:1.0.0
+$ docker run --rm -it -p 80:8000 examples/rest-endpoint:1.0.0
 +--
 
   Mapping port 80 to 8000 permits the application welcome page to be visited at
